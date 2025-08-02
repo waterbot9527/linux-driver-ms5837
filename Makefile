@@ -3,7 +3,7 @@
 # 如果定义了KERNELRELEASE表示我们被内核构建系统调用
 ifneq ($(KERNELRELEASE),)
 	obj-m := ms5837.o
-	ms5837-objs := stm32-ms5837.o
+	ms5837-objs := ms5837.o
 
 # 否则我们是直接从命令行调用的
 else
